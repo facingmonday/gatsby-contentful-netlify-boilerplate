@@ -1,0 +1,105 @@
+/* ======= Base ======= */
+
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-2%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shrink {
+  0% {
+    width: 95%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+html,
+body {
+  min-height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  background-color: $smoky-white;
+}
+
+html {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  // always show the vertical scrollbar so that content doesn't jump
+  overflow-y: scroll;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  box-sizing: border-box;
+
+  &.is-scroll-disabled {
+    // revisit if overflow is needed elsewhere
+    overflow-y: hidden;
+
+    body {
+      overflow-y: scroll;
+      touch-action: none;
+    }
+  }
+
+  &.smooth-scroll {
+    scroll-behavior: smooth;
+  }
+}
+
+// inherited from <html>
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+    font-family: $font-family;
+    color: $color-text;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+a {
+    color: $color-1-light;
+    @include transition (all 0.4s ease-in-out);
+    &:hover {
+        text-decoration: underline;
+        color: darken($color-1-light, 10%);        
+    }
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $color-h1;
+}
+h1 {
+  font-size: 2em;
+  color: $color-h1;
+}

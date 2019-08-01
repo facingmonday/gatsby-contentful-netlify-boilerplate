@@ -1,0 +1,17 @@
+@import '../../styles/config';
+
+.main {
+  &__container{
+    padding: 60px 0px 0px 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  &__body {
+    flex: 1 0 auto;
+  }
+  &__footer {
+    flex-shrink: 0;
+  }
+}

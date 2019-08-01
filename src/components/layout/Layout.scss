@@ -1,0 +1,6 @@
+@import '~styles/config';
+@import '~styles/fonts.css';
+
+:global {
+  @import '~styles/base';
+}
