@@ -25,9 +25,9 @@ class Header extends Component {
   render() {
     const menu = [
       {
-        label: 'T-Shirts',
+        label: 'Consulting',
         icon: '',
-        href: '/shirts'
+        href: '/consulting'
       },
       {
         label: 'Photos',

@@ -41,13 +41,13 @@ class Home extends Component {
         />
         <HeroCarousel
           images={[
-            require('../assets/images/home/1.jpg')
+            require('../assets/images/blog/blog-4.jpg')
           ]}
         />
         <Section>
           <SectionHeading
-            title={'Welcom to Magic City Media'}
-            subtitle={'Meeting your needs on a wide variety of media platforms including print, web, video, photography, and much more.'}
+            title={'Welcome to the Gatsby boilerplate'}
+            subtitle={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo ante et cursus egestas. Phasellus ornare metus est, at posuere arcu eleifend in. Mauris molestie libero vel nisl malesuada dapibus. Cras rutrum porttitor bibendum. Vivamus hendrerit nibh vel urna mollis tincidunt nec mollis magna.'}
           />
         </Section>
         <Section>
@@ -57,18 +57,18 @@ class Home extends Component {
             md={4}
           >
             <IconBlock
-              title={'T-Shirt Printing'}
-              description={'We print shirts'}
+              title={'Consulting'}
+              description={'We like to consult'}
               iconName={'tshirt'}
             />
             <IconBlock
               title={'Photography'}
-              description={'We print shirts'}
+              description={'We provide all kinds of services'}
               iconName={'photo-camera'}
             />
             <IconBlock
               title={'Video'}
-              description={'We print shirts'}
+              description={'We provide all kinds of services'}
               iconName={'video-camera'}
             />
             <IconBlock
@@ -83,28 +83,28 @@ class Home extends Component {
             />
             <IconBlock
               title={'Social'}
-              description={'We print shirts'}
+              description={'We provide all kinds of services'}
               iconName={'network'}
             />
           </BlockSet>
         </Section>
         <ImageTextColumn
-          image={require('../assets/images/heros/shirts.jpg')}
-          heading={'Custom Printed T-Shirts'}
-          body={'Got an idea for a custom t-shirt or other great gear? Have an event you want to commemorate? We have options for men, women, children, infants and pets. Choose your style, choose your color and get ready to have some fun. At Big Frog, creativity is celebrated in a big way, every day!'}
+          image={require('../assets/images/blog/blog-1.jpg')}
+          heading={'Here is a phone app'}
+          body={'Fusce sed consectetur dolor. Phasellus sit amet commodo tortor. Quisque volutpat, mi ut volutpat aliquam, lorem lacus sollicitudin neque, quis facilisis libero libero vel justo. Donec felis dui, dignissim quis metus id, ullamcorper porta tortor. Phasellus orci nisl, finibus quis mattis quis, cursus et sem.'}
           cta={{
             label: 'More',
-            href: '/shirts'
+            href: '/about'
           }}
         />
         <ImageTextColumn
           right
-          image={require('../assets/images/heros/shirts.jpg')}
-          heading={'Custom Printed T-Shirts'}
-          body={'Got an idea for a custom t-shirt or other great gear? Have an event you want to commemorate? We have options for men, women, children, infants and pets. Choose your style, choose your color and get ready to have some fun. At Big Frog, creativity is celebrated in a big way, every day!'}
+          image={require('../assets/images/blog/blog-2.jpg')}
+          heading={'Get a website'}
+          body={'Mauris ullamcorper magna tortor, id hendrerit odio malesuada id. Donec suscipit arcu nec erat rutrum, quis pharetra nibh venenatis. Aliquam erat volutpat. Praesent in urna volutpat, blandit ex quis, pellentesque purus.'}
           cta={{
             label: 'More',
-            href: '/shirts'
+            href: '/about'
           }}
         />
       </Page>

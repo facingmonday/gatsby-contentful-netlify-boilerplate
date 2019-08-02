@@ -55,35 +55,37 @@ exports.onCreateWebpackConfig = (
     },
   };
   const config = actions.setWebpackConfig(webpackConfig);
-  console.log('config', config);
 };
 
 // This function allows us to programmatically create pages
 // Specifically, we use this to generate pages from a template and a series of CMS entries
-exports.createPages = async ({ graphql, actions }) => {
+//exports.createPages = async ({ graphql, actions }) => {
   
-  const { createPage, createRedirect } = actions;
+  //const { createPage, createRedirect } = actions;
 
-  const { data } = await graphql(`
-    query {
-      invoicePages: allContentfulInvoice {
-        edges {
-          node {
-            slug
-          }
-        }
-      }
-    }
-  `);
+  /**
+   * EXAMPLE INVOICES
+   */
+  // const { data } = await graphql(`
+  //   query {
+  //     invoicePages: allContentfulInvoice {
+  //       edges {
+  //         node {
+  //           slug
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
   
-  data.invoicePages.edges.forEach(({ node }) => {
-    console.log('node', node);
-    createPage({
-      path: `/invoices/${node.slug}`,
-      component: path.resolve('./src/templates/invoice.js'),
-      context: {
-        slug: node.slug,
-      },
-    });
-  });
-};
+  // data.invoicePages.edges.forEach(({ node }) => {
+  //   console.log('node', node);
+  //   createPage({
+  //     path: `/invoices/${node.slug}`,
+  //     component: path.resolve('./src/templates/invoice.js'),
+  //     context: {
+  //       slug: node.slug,
+  //     },
+  //   });
+  // });
+//};

@@ -7,7 +7,7 @@ class Image extends Component {
     return (
       <img
         style={style}
-        className={s([s.image, className])}
+        className={s(className)}
         src={src}
         alt={alt}
         {...rest}

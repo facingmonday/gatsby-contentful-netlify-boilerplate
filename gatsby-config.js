@@ -50,11 +50,11 @@ const config = {
       },
     },
     'gatsby-plugin-offline',
-    '@contentful/gatsby-transformer-contentful-richtext',
   ],
 };
 
-if(process.env.CONTENTFUL_SPACE_ID) {
+if(process.env.CONTENTFUL_SPACE_ID == 'true') {
+  console.log('true!!!!!!')
   config.plugins.push({
     resolve: 'gatsby-source-contentful',
     options: {
@@ -67,6 +67,7 @@ if(process.env.CONTENTFUL_SPACE_ID) {
         : 'preview.contentful.com',
     },
   });
+  config.plugins.push('@contentful/gatsby-transformer-contentful-richtext');
 }
 
 module.exports = config;

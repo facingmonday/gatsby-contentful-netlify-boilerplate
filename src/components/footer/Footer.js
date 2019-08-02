@@ -34,8 +34,8 @@ class Footer extends Component {
     return (
       <div className={s.footer}>
         <div className={s.footer__column}>
-          <a className={s.footer__link} href={'shirts'}>
-            T-Shirts
+          <a className={s.footer__link} href={'consulting'}>
+            Consulting
           </a>
           <a className={s.footer__link} href={'photo'}>
             Photography
@@ -51,23 +51,23 @@ class Footer extends Component {
           </a>
         </div>
         <div className={s.footer__column}>
-          <a className={s.footer__link} href={'shirts'}>
+          <a className={s.footer__link} href={'shop'}>
             Shop
           </a>
-          <a className={s.footer__link} href={'photo'}>
+          <a className={s.footer__link} href={'about'}>
             About Us
           </a>
-          <a className={s.footer__link} href={'video'}>
+          <a className={s.footer__link} href={'faq'}>
             FAQ
           </a>
-          <a className={s.footer__link} href={'web'}>
+          <a className={s.footer__link} href={'contact'}>
             Contact
           </a>
         </div>
         <div className={s.footer__column}>
           <div className={s.footer__address}>
-              <p>234 2nd St</p>
-              <p>Barberton, OH 44203</p>
+              <p>1234 Dietz Ave.</p>
+              <p>Akron, OH 44203</p>
             </div>
         </div>
         <div className={s.footer__column}>
