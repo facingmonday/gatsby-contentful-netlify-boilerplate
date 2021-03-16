@@ -1,7 +1,8 @@
 import { graphql } from 'gatsby';
 import Header from '../components/header/Header';
+import { withUIContext } from '../context/ui';
 
-export default Header;
+export default withUIContext(Header);
 
 // export const query = graphql`
 //   query Header {
